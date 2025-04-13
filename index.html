@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Hex Color Identifier</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+        <main>
+            <h1>Hex Code Color Identifier</h1>
+            <input id="input" type="text" placeholder="Input hex code" required>
+            <input type="submit" min="1" onclick="color()"><br>
+            <p>To identify a hex color, you must follow these requirements:</p>
+            <li>A minimum of 3 letters and maximum of 6 letters</li>
+            <li>Range from A to F and 0 to 9</li><br>
+            <div class="color">
+                <p id="value">Input hex code here</p>
+            </div>
+        </main>
+        
+        <script src="hexcoder.js"></script>
+        <script>
+            window.onload = function() {
+                color()
+            }
+        </script>
+    </body>
+</html>
